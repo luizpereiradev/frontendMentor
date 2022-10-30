@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'DM Sans', sans-serif;
+}
+
+body{
+	background-color: hsl(27, 66%, 92%);
+}
+
+main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.balance{
+	width: 550px;
+	height: 100px;
+	background-color: hsl(10, 79%, 65%);
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.balance__texts{
+	display: flex;
+	padding: 0 30px;
+	flex-direction: column;
+	color: hsl(0, 0%, 100%);
+}
+
+.balance__texts h2{
+	font-size: 1.3rem;
+}
+
+.balance__texts p{
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+
+.balance__logo{
+	padding-right: 40px;
+	width: 100px;
+}
+
+/* .spending */
+
+.spending{
+	width: 550px;
+	height: 430px;
+	background-color: hsl(33, 100%, 98%);
+	border-radius: 10px;
+	margin-top: 10px;
+	color: hsl(25, 47%, 15%);
+}
+.spending h2{
+	font-size: 1.3rem;
+	padding: 20px 0 0 30px;
+}
+.spending h3{
+	font-size: 2rem;
+	color: hsl(25, 47%, 15%);
+}
+
+.spending__items{
+	padding: 20px 0;
+	margin: 0 30px;
+	display: flex;
+	align-items: flex-end;
+	height: 35vh;
+	border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+
+.spending__item{
+	margin: 10px;
+	text-align: center;
+}
+
+.spending__item__day{
+	color: hsl(28, 10%, 53%);
+}
+
+.spending__item__bar{
+	width: 43px;
+	background-color: hsl(10, 79%, 65%);
+	border-radius: 5px;
+}
+.spending__item__bar:hover{
+	background-color: hsl(186, 34%, 60%);
+}
+.spending__item__value{
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+	background-color: hsl(25, 47%, 15%);
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 10%;
+	visibility: hidden;
+}
+
+.spending__item:hover .spending__item__value{
+	visibility: visible;
+}
+
+
+.total{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 20px 30px;
+}
+
+.total p {
+	color: hsl(28, 10%, 53%);
+}
+
+.total__percentage{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#total__percentage__text{
+	color:hsl(25, 47%, 15%);
+}
+
+
+
+
+/* footer */
+.attribution {
+		font-size: 11px; 
+		text-align: center; 
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%);
+}
